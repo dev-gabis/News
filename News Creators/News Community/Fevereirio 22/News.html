@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>EmailTemplate-Responsive</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #FFFFFF !important;
+            border-color: #FFFFFF !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+                
+        }
+
+    </style>
+    </head>
+    <body bgcolor="#FFFFFF" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <!-- Hero Image, Flush : BEGIN -->
+      <tr>
+        <td class="full-width-image"><a href="https://creators.llc/" target="_blank"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/24b2b822-2a37-ed9e-65ab-251baa3ce843.gif" width="450" height="200" alt=""></a></td>
+      </tr>
+      <!-- Hero Image, Flush : END -->
+      <!-- 1 Column Text : BEGIN -->
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 12px; mso-height-rule: exactly; line-height: 40px; color: #7f7f7f;"> | ABRIL 2022
+          <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+            <tr> </tr>
+          </table>
+          </td>
+      </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p>Você acorda no susto - o sonho quebrou no meio com o despertador tocando. Pega o celular e já aproveita para verificar as notificações. O twitter. E o instagram também. Eu não sei vocês, mas tem dias que nessa hora já bate um arrependimento: tem coisa que eu não queria ter lido antes das 07h. Talvez só depois do almoço. Entre se preparar para o dia, tomar café, sentar na frente do computador, as primeiras reuniões do dia… às vezes você não precisa de muita coisa para se sentir exausta.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, inventore optio. Quaerat consectetur, veritatis odio eligendi a eveniet sint sit repellat, nihil itaque provident amet suscipit, magni ea minus animi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod sint ullam doloribus provident, aperiam commodi porro velit eos culpa beatae maiores quasi? Quia provident tempore culpa tenetur accusantium in, adipisci architecto. Vitae, debitis et distinctio labore corrupti similique cumque quos magni blanditiis, corporis officia deleniti, neque iste molestiae dolores..</p></td>
+  </tr>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+          <!-- Button : END --></td>
+  </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/cdc99d6c-5116-69fc-66b8-f597f12e040f.png" width="378" height="252" alt=""/>
+          <!-- Button : END --></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p>Conheça Creators que pertencem a nossa rede e estão criando conversas sobre bem estar e saúde mental com suas comunidades.</p>
+<!-- Button : END --></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/6523/Contente" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/63985efd-4982-46c0-c34b-eb58b1c6fe5d.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Contente</strong></p>
+          <p>A primeira plataforma de conteúdo e mídia para uma vida digital mais consciente. #ainternetqueagentequer
+            <!-- Button : END -->
+          </p>
+<p><strong><a href="https://creators.llc/c/6523/Contente" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/8836/Marinus" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/924596e5-7d28-6c85-a0e6-21105ba68fb4.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Hanna Khalil</strong></p>
+          <p>Comunicadora &amp; Film Maker nos fluxos do autoconhecimento consciente.</p>
+<p><strong><a href="https://creators.llc/c/8836/Marinus" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/7225/Clarissa" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/5f4fe064-77e6-2fae-4553-bc2e12be0e5d.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>YAM</strong></p>
+          <p>No YAM escolhemos caminhos que preservam a vida, para produzir de forma criativa respeite, participe e aceite o espírito do tempo com consciência, calma e precisão.
+            <!-- Button : END -->
+          </p>
+<p><strong><a href="https://creators.llc/c/7225/Clarissa" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/7342/Vin%C3%ADcius" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/f9f8d58c-6b96-5c13-11c0-0ef522694696.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Longetividade.Yoga</strong></p>
+          <p>Apresentado por Vinícius Della Líbera, neste canal você encontra aulas de yoga e meditação preparadas com estudos e pesquisas comprometidas com o bem estar e a saúde física e mental.
+            <!-- Button : END -->
+          </p>
+<p><strong><a href="https://creators.llc/c/7342/Vin%C3%ADcius" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/6759/Larissa" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/45434f11-8b5c-55b6-6381-e34f232e9395.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Hábitos que mudam</strong></p>
+          <p>
+            <!-- Button : END -->
+O Hábitos que Mudam possui uma comunidade com mais de 50 mil mulheres no Instagram, 3.000 pessoas no e-mail e 2 mil pessoas no Telegram. Compartilham conteúdos gratuitos para melhorar a rotina, produtividade e organização de mulheres.</p>
+<p><strong><a href="https://creators.llc/c/6759/Larissa" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/8174/Obvious" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/4b17afc4-feef-21b8-9ab4-6f0a7bae1c9f.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Obvious</strong></p>
+          <p>Obvious é uma plataforma de conteúdo que tem a felicidade feminina como bússola. Um canal de comunicação que permite que as marcas que conectem verdadeiramente com as mulheres.
+            <!-- Button : END -->
+          </p>
+        <p><strong><a href="https://creators.llc/c/8174/Obvious" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><a href="https://creators.llc/c/9004/Carla" target="_blank"></a><a href="https://creators.llc/c/9004/Carla" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/5ef16a0e-6e5e-9254-4095-ecb836b9df93.png" width="150" height="174" alt=""></a>
+          <!-- Button : END --></td>
+        <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><strong>Carla Lemos</strong></p>
+          <p>Criadora de conteúdo desde 2002, Carla Lemos é colunista @universa_uol e também podcaster no Carla News e Podcast Primas.
+            <!-- Button : END -->
+          </p>
+        <p><strong><a href="https://creators.llc/c/9004/Carla" target="_blank" style="color: #7553e2">Ver mais</a></strong></p></td>
+      </tr>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+          <!-- Button : END --></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/ef1f37b7-56f3-af50-d427-1078c397a293.png" width=" " height=" " alt=""/>
+          <!-- Button : END --></td>
+      </tr>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p>Conteúdos que consumimos sobre saúde mental e bem estar.</p>
+<p><strong>1. Welcome, Professionals</strong></p>
+      <p>O LinkedIn lançou uma nova campanha publicitária promovendo um futuro de trabalho mais saudável.</p>
+      <p><strong><a href="https://www.thedrum.com/news/2022/01/24/linkedin-redefines-what-it-means-be-professional-with-new-campaign" target="_blank" style="color: #7553e2">Leia +</a></strong></p>
+      <p><strong>2. ‘No capitalismo, cada um é responsável pela própria saúde mental’</strong></p>
+      <p>Em entrevista para <a href="https://gamarevista.uol.com.br/" target="_blank" style="color: #7553e2">Gama</a>, pesquisador Elton Corbanezi liga a depressão à atual realidade capitalista, em que até mesmo o cuidado com a saúde mental é individualizado.</p>
+      <p><strong><a href="https://gamarevista.uol.com.br/semana/voce-ta-bem/capitalismo-e-saude-mental/?utm_medium=twitter&utm_source=social&utm_campaign=semana_gama" target="_blank" style="color: #7553e2">Leia +</a></strong></p>
+      <p><strong>3. Home office e trabalho híbrido desencadearam casos de burnout entre jovens, aponta estudo</strong></p>
+<p><strong></strong>Estudo aponta que home office e trabalho híbrido são responsáveis por desencadear crises de burnout, e que a síndrome atinge principalmente trabalhadores da Geração Z com papéis de liderança em suas empresas.</p>
+<p><strong><a href="https://www.cnnbrasil.com.br/saude/home-office-e-trabalho-hibrido-desencadearam-casos-de-burnout-entre-jovens-aponta-estudo/?utm_source=social&utm_medium=instagram-stories&utm_campaign=saude-cnn-brasil&utm_content=imagem" target="_blank" style="color: #7553e2">Leia +</a></strong></p>
+<p><strong>4. Saúde mental das pessoas negras</strong></p>
+<p><strong></strong>Como está a saúde mental de pessoas pretas no cenário atual? A <a href="https://www.generonumero.media/" target="_blank" style="color: #7553e2">Gênero e Número</a> trouxe, além de dados sobre o tema, 7 psicólogos e iniciativas que abordam como questões raciais impactam a vida de pessoas negras.</p>
+<p><strong><a href="https://webstories.generonumero.media/racismo/saude-mental-das-pessoas-negras/" target="_blank" style="color: #7553e2">Leia +</a></strong></p>
+<p><strong>5. Jovens são os mais afetados pelos efeitos da pandemia</strong></p>
+      <p><strong></strong><strong></strong></p>
+      <p>Estudo realizado pela Kantara em 21 países, incluindo o Brasil, relata que jovens são os mais afetados pelos efeitos da pandemia. A pesquisa mostrou que 49% dos entrevistados de 18 a 24 anos relatam impacto na saúde mental durante a crise e 62% enfrentam queda no orçamento.&nbsp;<strong></strong></p>
+<p><strong><a href="https://www.meioemensagem.com.br/home/marketing/2021/06/11/jovens-sao-os-mais-afetados-pelos-efeitos-da-pandemia.html" target="_blank" style="color: #7553e2">Leia +</a></strong></p>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+		  <tr>
+		    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/b959bcb9-3227-e250-3bee-34a089aa5b02.png" width=" " height=" " alt=""/>
+		      <!-- Button : END --></td>
+	      </tr>
+    </table>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;">
+		<a href="https://www.youtube.com/watch?v=ZqLuJ2Llt44" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/5ad4585a-58ac-4124-9fc5-8071be5eece1.gif" width="600" height="340" alt=""></a>
+<p>No último Creators Insider conversamos sobre Planejamento Financeiro para #creators com Stella Yeshua e Stephanie Salateo, <a href="https://www.youtube.com/watch?v=ZqLuJ2Llt44" target="_blank" style="color: #7553e2">acesse nossa live</a> para saber quais foram os conhecimentos compartilhados por elas :) </p></td>
+		  </tr></table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding:; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: px; mso-height-rule: exactly; line-height: px; color: #000000;"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/a79ac39d-ee82-6d12-f347-9aaf82bb7077.png" width="80px" height="" alt="">
+      <!-- Button : END --></td>
+    <td style="padding: ; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p>O próximo encontro acontece quinta-feira, <strong>24/02 às 19h</strong>. O Creators Insider #3 com o tema <strong>Crescimento e Saúde Mental para creators</strong> convida Samuel Gomes e Gabriela Hebling para compartilhar suas vivências e aprendizados, afinal, como conciliar produção de conteúdo e autocuidado? A transmissão acontecerá no <a href="https://www.youtube.com/channel/UCeLRwal9j10TK1yeEhi6FEQ?app=desktop" target="_blank" style="color: #7553e2">nosso canal do Youtube</a>, anote na sua agenda!
+        <!-- Button : END -->
+    </p></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/faa3555a-48bb-1601-9678-b45d27d92769.png" width="450" height="83" alt=""/>
+      <p>Campanha de ativação com criadores de conteúdo com objetivo de engajar a audiência para a nova causa do Ifood: uma ferramenta de doação diretamente na plataforma, instruindo como é fácil doar através do app. Olha só alguns dos conteúdos:</p>
+      <img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/49fa01a4-4ba6-77a9-0c24-cbdf1a45283d.gif" width="" height="" alt=""/>
+<!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><strong><a href="https://www.instagram.com/p/CXtS8NBDpJ8/" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/7440c973-0e9a-f43d-5d7c-6eca17bf6657.gif" width="" height="" alt=""></a></strong>
+      <!-- Button : END --></td>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><a href="https://www.tiktok.com/@mccarol_oficial/video/7043895317288324358?is_from_webapp=1&amp;sender_device=pc&amp;web_id6998605656417715718" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/ac0430b6-36f3-50c2-db60-478fbe8adfa5.gif" width="" height="" alt=""></a>
+      <!-- Button : END --></td>
+    <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><a href="https://www.instagram.com/tv/CXuIFC8AcCN/" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/eb978678-e4db-6769-4ade-3f60e0739a7b.gif" width="" height="" alt=""></a>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: 20px; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/e2c38cf8-32fa-b5df-1bcd-e178e50f6dec.png" width="560" height="1" alt=""/>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+  <tr>
+    <td style="padding: ; text-align: left; font-family: montserrat; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><a href="https://g.page/r/CYBK3P-cWeE4EAg/review" target="_blank"><img src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/26f46f1b-0a6a-f1e6-bb54-d4d8a548cf98.png" width="600" height="" alt=""></a>
+      <!-- Button : END --></td>
+  </tr>
+</table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600" class="email-container">
+      <tr>
+        <td style="padding: 10px; text-align: center; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"></td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f0f1f3" width="600" class="email-container">
+  <tbody>
+        <tr>
+          <td style="padding: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto'; font-size: 16px; mso-height-rule: exactly; line-height: 25px; color: #000000;"><p><em>Fique à vontade para responder este e-mail, vou adorar conversar contigo.</em></p>
+            <p><strong>Até a próxima,</strong></p>
+            <p></p>
+            <p><strong><img src="https://mcusercontent.com/eef0dd89a96a8d4d115efcf01/images/026a756b-ae8c-25f4-102a-d68cc591acc8.png" width="250" height="88" alt=""></strong>
+              <!-- Button : END -->
+            </p>
+            <p><br>
+              <em> Conte com a gente – <strong>bons trabalhos! </strong></em></p></td>
+        </tr>
+  </tbody>
+    </table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#d3d4d8" width="600" class="email-container">
+  <tr>
+<td style="padding:20px;text-align:right;font-family:'SF Pro Display', Roboto;font-size:12px;mso-height-rule:exactly;line-height:0px;color:#7f7f7f;">
+<p><a href="https://www.instagram.com/creators.llc/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/1384/1384015.png" width="40" height="40" alt=""></a>
+</p>
+</td>
+<td style="padding:20px;text-align:left;font-family:'SF Pro Display', Roboto;font-size:12px;mso-height-rule:exactly;line-height:0px;color:#7f7f7f;">
+<p><a href="https://www.linkedin.com/company/creators-llc/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/1384/1384014.png" width="40" height="40" alt=""></a>
+</p>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#d3d4d8" width="600" class="email-container">
+  <tr>
+<td style="padding:20px;text-align:center;font-family:'SF Pro Display', Roboto;font-size:12px;mso-height-rule:exactly;line-height:20px;color:#7f7f7f;">
+<p>Vamos ficar tristes, mas se não quiser mais receber nossos e-mails<strong> <a href="https://llc.us14.list-manage.com/unsubscribe/post" style="color:#7f7f7f;" target="_blank">clique aqui</a></strong>.</p>
+<p> </p>
+<p> <strong>©REATORS</strong>, Trusted Creative Net, All rights reserved</p>
+<p> Please, read our <strong><a href="https://creators.llc/documents/Termos_de_Uso_Creators.pdf" style="color:#7f7f7f;" target="_blank">terms of use</a></strong> and write with your suggestions. </p>
+</td>
+</tr>
+</table>
+</body>
+</html>

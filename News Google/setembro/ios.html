@@ -1,0 +1,528 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+
+  <meta property="og:title" content="Bem-estar, saúde mental e dicas para dias + leves :)">
+  <meta property="fb:page_id" content="43929265776">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="referrer" content="origin">
+  <meta charset="utf-8">
+  <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Use the latest (edge) version of IE rendering engine -->
+  <title>EmailTemplate-Responsive</title>
+  <!-- The title tag shows in email notifications, like Android 4.4. -->
+  <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+  <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+  <!-- CSS Reset -->
+  <style type="text/css">
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Forces Outlook.com to display emails full width. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* What is does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+
+    p {
+      font-family: 'SF Pro Display', 'Roboto', sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+   
+
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+
+    table table table {
+      table-layout: auto;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+
+    /* What it does: Another work-around for iOS meddling in triggered links. */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+    }
+
+    p {
+      font-family: 'SF Pro Display', 'Roboto', sans-serif;
+    }
+  </style>
+
+  <!-- Progressive Enhancements -->
+  <style type="text/css">
+    /* What it does: Hover styles for buttons */
+    .button-td,
+    .button-a {
+      transition: all 100ms ease-in;
+    }
+
+    .button-td:hover,
+    .button-a:hover {
+      background: #FFFFFF !important;
+      border-color: #FFFFFF !important;
+    }
+
+    .p-10 {
+      padding: 10px;
+    }
+
+    .pt-10 {
+      padding-top: 10px;
+    }
+
+    .pr-10 {
+      padding-right: 10px;
+    }
+
+    .pb-10 {
+      padding-bottom: 10px;
+    }
+
+    .pl-10 {
+      padding-left: 10px;
+    }
+
+    .p-20 {
+      padding: 20px;
+    }
+
+    .pt-20 {
+      padding-top: 20px;
+    }
+
+    .pr-20 {
+      padding-right: 20px;
+    }
+
+    .pb-20 {
+      padding-bottom: 20px;
+    }
+
+    .pl-20 {
+      padding-left: 20px;
+    }
+
+    @media screen and (min-width: 601px) {
+      .p-lg-10 {
+        padding: 10px;
+      }
+
+      .pt-lg-10 {
+        padding-top: 10px;
+      }
+
+      .pr-lg-10 {
+        padding-right: 10px;
+      }
+
+      .pb-lg-10 {
+        padding-bottom: 10px;
+      }
+
+      .pl-lg-10 {
+        padding-left: 10px;
+      }
+
+      .p-lg-20 {
+        padding: 20px;
+      }
+
+      .pt-lg-20 {
+        padding-top: 20px;
+      }
+
+      .pr-lg-20 {
+        padding-right: 20px;
+      }
+
+      .pb-lg-20 {
+        padding-bottom: 20px;
+      }
+
+      .pl-lg-20 {
+        padding-left: 20px;
+      }
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 600px) {
+
+      .email-container {
+        width: 100% !important;
+      }
+
+      /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+      .fluid,
+      .fluid-centered {
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      /* And center justify these ones. */
+      .fluid-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      /* What it does: Forces table cells into full-width rows. */
+      .stack-column,
+      .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+      }
+
+      /* And center justify these ones. */
+      .stack-column-center {
+        text-align: center !important;
+      }
+
+      /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+      .center-on-narrow {
+        text-align: center !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+      }
+
+      table.center-on-narrow {
+        display: inline-block !important;
+      }
+
+    }
+  </style>
+  <link rel="stylesheet" href="https://us14.campaign-archive.com/css/archivebar-desktop.css" mc:nocompile>
+</head>
+
+<body gcolor="#FFFFFF" width="100%" style="margin: 0;" yahoo="yahoo">
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center">
+    <tr>
+      <td align="center">
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+          class="email-container">
+          <!-- Hero Image, Flush : BEGIN -->
+          <tr>
+            <td align="center" class="esd-block-image" style="font-size: 0px; padding-bottom: 50px; max-width: 100%;"><a
+                target="_blank">
+                <img style="width: 560px;"
+                  src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/987fddd2-580b-a6b5-7c73-692090aea8a0.gif"
+                  alt style="display: block;" width="560" class="adapt-img"></a>
+            </td>
+          </tr>
+        </table>
+
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="450"
+          class="email-container">
+          <tr>
+            <td align="center" class="esd-block-text es-m-txt-c es-p20b es-p10t es-p10b">
+              <p class="es-p20b"> <strong>Olá, Creator!</strong> <br><br>
+
+                2022 entrou em sua reta final e, junto com o calor, bate um saudosismo sobre tudo que estamos
+                construindo juntos! Nosso objetivo é dar vida às suas histórias <3 <br> Obrigada pela colaboração e vamos
+                  esquentar este fim de ano! </p>
+            </td>
+          </tr>
+        </table>
+
+
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+          class="email-container">
+          <tr>
+            <td class="pl-lg-20"
+              style="text-align: left; font-size: 16px;  line-height: 25px; color: #000000; padding-top: 70px; padding-bottom: 20px;">
+              
+              <img src="https://cdn.discordapp.com/attachments/1021439805969670164/1024403984204693534/Frame_2.png"> 
+            </td>
+          </tr>
+        </table>
+
+
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="560"
+          class="email-container" style="padding-top: 1px;">
+          <tr>
+            <td>
+
+
+             
+              <table align="center" width="560" class="email-container">
+                <tr>
+                  <td style="height:20px;">
+
+                  </td>
+                </tr>
+              </table>
+
+              <table cellspacing="0" cellpadding="0" border="0" align="left" bgcolor="#ffffff" width="540"
+                style="background-color: #F1ECFF; border-radius: 20px; font-size: 15px;  max-width: 100%;">
+                <tr>
+                  <td align="left" class="esd-block-text es-m-txt-c es-p20b h-auto" valign="top" width="300px"
+                  style="width: 150px; padding: 30px; font-size: 30px;">
+                  <p style="color: #664978; "><strong>Creators <br>boost </strong></p>
+                  <p style="font-size: 14px; font-weight: 800; color: #664978; margin-top: -20px; ">DIA 21/10 ÀS 14:00 </p>
+                </td>
+                  <td style="font-family: 'SF Pro Display', 'Roboto', sans-serif; padding-right: 20px; color: #72617C;">
+                    <p>Vamos falar sobre <strong >Copa do mundo</strong> e queremos ouvir a opinião de vocês! Como pegar carona no tema dentro do seu nicho?
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+          class="email-container">
+          <tr>
+            <td class="p-lg-20"
+              style="padding-bottom: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto', sans-serif; font-size: 16px;  line-height: 25px; color: #000000; padding-top: 70px;">
+              <img src="https://www.imagemhost.com.br/images/2022/08/24/Frame-3-6.png">
+            </td>
+          </tr>
+        </table>
+
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="540"
+          class="email-container">
+          <tr>
+
+            <td
+            style="width: 240px; border-radius: 20px; color: #E4F8FF; font-size: 18px; text-align: left; background-color: #E4F8FF;">
+            <img style=" border-radius: 20px; width: 280px; height: 200px;"
+                src="https://cdn.discordapp.com/attachments/1021439805969670164/1026542331727466636/Frame_4.png">
+            </td>
+
+            <td style="width: 20px;">
+                
+            </td>
+
+            <td style="height: 270px; background-color: #E4F8FF; border-radius: 20px;">
+                <p
+                    style="background-color: #E4F8FF; width: 230px; padding: 30px; border-radius: 20px; color: #3C5F80; font-size: 13px; text-align: left; font-size: 14px;">
+                    É isso mesmo que você está lendo, <strong> double voucher da Giffty! </strong>
+                    Vocês ficaram bem animados com esse formato de voucher que possibilita o resgate de vários tipos de presentes diferentes, desde roupas, viagens, cursos e conseguimos mais um voucher para vocês! Para quem irá receber o mimo de setembro da Giffty, poderá escolher entre já regatar o presente da sua escolha OU somar os dois vouchers e resgatar um presentão! <br><br>
+                </p>
+            </td>
+
+          </tr>
+        </table>
+
+
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+          class="email-container">
+          <tr>
+            <td class="pl-lg-20"
+              style="padding-bottom: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto', sans-serif; font-size: 16px;  line-height: 25px; color: #3C4043; padding-top: 50px;">
+              <img src="https://www.imagemhost.com.br/images/2022/08/24/Frame-3-3.png">
+            </td>
+          </tr>
+        </table>
+
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+          class="email-container">
+          <tr>
+            <td align="left" class="pl-lg-20" esd-links-color="#185abc" style="background-color:#AFE1C9; padding: 20px; border-radius: 20px; font-size: 14px; ">
+              <p>Uma função bastante esperada pelos creators finalmente veio aí! Agora já é possível gerar legendas para os seus conteúdos em vídeo direto na plataforma! Lembrando que, para poder desfrutar dessa funcionalidade, a Siri e o Ditado precisam estar ativados nas configurações do seu iPhone. Atualize seu app e faça um teste! </p>
+            </td>
+          </tr>
+        </table>
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+          class="email-container">
+          <tr>
+            <td class="pl-lg-20"
+              style="padding-bottom: 20px; text-align: left; font-family: 'SF Pro Display', 'Roboto', sans-serif; font-size: 16px;  line-height: 25px; color: #000000; padding-top: 70px; padding-bottom: 40px;">
+              <img src="https://www.imagemhost.com.br/images/2022/08/24/Frame-3-5.png">
+            </td>
+          </tr>
+        </table>
+
+
+        <table ellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="600"
+            class="email-container">
+          <tr>
+              
+            <td width="31%" align="center" valign="top" class="esd-block-image">
+                  <img style="padding-bottom: 10px; " src="https://www.imagemhost.com.br/images/2022/08/24/Frame-218.png">
+                  <a target="_blank" href="https://channel.google.com/user/eJeDDwWR/29mNg_"> <img
+                    style="border-radius: 20px; height: auto; width: 90%;"
+                    src="https://cdn.discordapp.com/attachments/1021439805969670164/1022902870900748309/image_1.png"></a>
+
+                      <a href="https://channel.google.com/user/eJeDDwWR/"><img style="padding-top: 20px ;"
+                  src="https://cdn.discordapp.com/attachments/1021439805969670164/1022907876693508096/Frame_211.png"></a>
+
+              <p style="color: #672868; font-size: 15px; padding-bottom: 40px;">Como higienizar roupas sem lavá-las.</p>
+
+              <a style="text-decoration: none" href="https://channel.google.com/user/eJeDDwWR/29mNg_"><p style="width: 70px; background-color:#FBA9DB; color: #672868; font-size: 12px; padding: 7px; font-weight: 700; border-radius: 50px; ">Confira</p></a>
+              </td>
+
+
+              
+              <td width="2%">
+                <p></p>
+              </td>
+
+
+
+              <td width="31%" align="center" valign="top" class="esd-block-image">
+                <img style="padding-bottom: 10px; " src="https://www.imagemhost.com.br/images/2022/08/24/Frame-220.png">
+                <a target="_blank" href="https://channel.google.com/user/UkTJQVnf/yUysHYe"> <img
+                    style="border-radius: 20px; height: auto; width: 90%;"
+                    src="https://cdn.discordapp.com/attachments/1021439805969670164/1022902870540046346/Group_193.png"></a>
+                    <a href="https://channel.google.com/user/UkTJQVnf/"><img style="padding-top: 20px ;"
+                      src="https://cdn.discordapp.com/attachments/1021439805969670164/1022908818025361489/Frame_211_1.png"></a>
+    
+                  <p style="color: #672868; font-size: 15px; padding-bottom: 20px;">7 fundamentos de academia em casa que cabem no orçamento.</p>
+    
+                  <a style="text-decoration: none" href="https://channel.google.com/user/UkTJQVnf/yUysHY"><p style="width: 70px; background-color:#FBA9DB; color: #672868; font-size: 12px; padding: 7px; font-weight: 700; border-radius: 50px;">Confira</p></a>
+              </td>
+
+
+              
+              <td width="2%">
+                <p></p>
+              </td>
+
+
+
+              <td width="31%" align="center" valign="top" class="esd-block-image">
+                <img style="padding-bottom: 10px; " src="https://www.imagemhost.com.br/images/2022/08/24/Frame-222.png">
+                <a target="_blank" href="https://channel.google.com/user/l6f55udy/I1k4kR"> <img
+                    style="border-radius: 20px; height: auto; width: 90%;"
+                    src="https://cdn.discordapp.com/attachments/1021439805969670164/1022902870179332226/Group_194.png"></a>
+                    <a href="https://channel.google.com/user/l6f55udy/"><img style="padding-top: 20px ;"
+                      src="https://cdn.discordapp.com/attachments/1021439805969670164/1022909582735065119/Frame_211_2.png"></a>
+    
+                  <p style="color: #672868; font-size: 15px; padding-bottom: 55px;">Como fazer café gelado?</p>
+    
+                  <a style="text-decoration: none" href="https://channel.google.com/user/l6f55udy/I1k4kR"><p style="width: 70px; background-color:#FBA9DB; color: #672868; font-size: 12px; padding: 7px; font-weight: 700; border-radius: 50px;">Confira</p></a>
+              </td>
+          
+            </tr>
+          </table>
+
+
+
+
+
+          <table  align="center" bgcolor="#ffffff" width="600" class="email-container">
+            <tr>
+              <td align="center" class="esd-block-image" style="font-size: 0px; padding-top: 30px;"><a target="_blank">
+                  <img class="adapt-img"
+                    src="https://mcusercontent.com/1d3d02736d40ab9c7cf09f0b3/images/0beae94e-cba2-19a3-c88c-0c0dcd773b2c.gif"
+                    alt style="display: block;" width="540"></a></td>
+            </tr>
+          </table>
+
+
+          <table  align="center" bgcolor="#ffffff" width="600" class="email-container">
+            <tr>
+              <td align="center">
+                <p><a href="https://channel.google.com/user/ld-4U44h/"> <img style="width: 100PX;"
+                      src="https://cdn.discordapp.com/attachments/1021439805969670164/1022902869873139713/8137_1_1.png"></a></p>
+
+                <a style="text-decoration: none; color:#663C81; font-size: 20px;  padding-left: 10px;"
+                  href="https://channel.google.com/user/H4X4d5NL/"> <img
+                    src="https://cdn.discordapp.com/attachments/1021439805969670164/1022902869508231239/data-hora.png"> </a>
+                </P>
+                <p style="color:#663C81; font-size: 18px; padding-bottom: 50px;"><strong>Brasil</strong></p>
+              </td>
+            </tr>
+          </table>
+
+          <table  align="center" bgcolor="#ffffff" width="500" class="email-container">
+            <tr>
+              <td align="left" class="esd-block-text es-p20t es-p20b es-p20r" esd-links-color="#185abc" style="width: 200px; padding: 30PX;">
+                  <p style="color: #000000; font-size: 15px; padding-bottom: 10px;"> Nossa estrela da vez é comunicadora, especialista em moda, ativista e mãe atípica. O conteúdo da Tatah Fávero fala sobre moda real, corpos reais, maternidade real e traz uma série de experiências que nos fazem refletir sobre a nossa autoestima. Um conteúdo que nos faz sentir pertencidas!
+                    <a style="text-decoration: none" href="https://channel.google.com/user/H4X4d5NL/ercsv5"><p style=" text-align: center; width:150px; background-color:#D4EAFF; color: #283A68; font-size: 12px; padding: 7px; font-weight: 700; border-radius: 50px;">Confira o conteúdo</p></a>
+              </td>
+              <td align="center" class="esd-block-image" style="font-size: 0px;">
+                <a target="_blank" href="https://channel.google.com/user/H4X4d5NL/ercsv5"><img src="https://media.giphy.com/media/D06cRBykmPMmxyTJKJ/giphy.gif" alt style="display: block; height: auto; border-radius: 30px; margin-bottom: 30px; max-width: 100%;"></a></td>
+              </td>
+            </tr>
+          </table>
+
+       
+      
+          <table cellpadding="0" cellspacing="0" width="600px" style="background-color: #cef1ff; border-radius: 20px; height: 80px;" class="email-container" >
+            <tr>
+              <td align="left" class="esd-block-text es-m-txt-c es-p5t es-p5b">
+                <p style="color: #3c4043; text-align: center; font-size: 15px; "><strong>Obrigada por estar com a gente e até a próxima newsletter!✨</strong></p>
+              </td>
+            </tr>
+          </table>
+          
+          <table style="height:30px ;">
+            <td>
+
+            </td>
+          </table>
+
+      </td>
+    </tr>
+  </table>
+
+
+  
+
+
+
+
+
+</body>
+
+</html>
